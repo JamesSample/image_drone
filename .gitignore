@@ -21,6 +21,9 @@ $RECYCLE.BIN/
 .ipynb_checkpoints
 *.pyc
 
+# GIS folder
+gis/
+
 # =========================
 # Operating System Files
 # =========================
