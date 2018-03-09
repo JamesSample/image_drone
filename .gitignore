@@ -17,6 +17,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Python
+.ipynb_checkpoints
+*.pyc
+
 # =========================
 # Operating System Files
 # =========================
