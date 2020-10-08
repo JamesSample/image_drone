@@ -1,0 +1,9 @@
+# Ideas to try
+
+ 1. **Tuning hyperparameters and model selection**, as in `frisk_oslofjord_mod_comp.ipynb` (to be investiagted by Harry). My hypothesis is that the Random Forest will perform best (in terms of classification accuracy and computational performance) out of all the "traditional" (i.e. non-neural-net) methods available (see e.g. [here](https://www.researchgate.net/publication/279556630_Do_we_Need_Hundreds_of_Classifiers_to_Solve_Real_World_Classification_Problems))
+ 
+ 2. **Feature engineering**, especially in relation to representing the **spatial structure** in the images. This can be achieved by using moving window or convolution filters across the image and using them to derive new bands/features e.g. use a 5 x 5 or 9 x 9 pixel moving window and create features based on the max, 75th, 50th, 25th min and mean values fo each band. See e.g. [here](https://www.sciencedirect.com/science/article/pii/S0924271619302205) for other ideas
+ 
+ 3. **Tensor decomposition**, either to compress the number of bands or to compress the entire image in a way that summarises the dataset while preserving spatial structures. I haven't fully got my head around this yet, but see e.g. [TensorLy](http://tensorly.org/stable/home.html) and [Tensor Regression](https://github.com/JeanKossaifi/tensorly-notebooks/blob/master/03_tensor_regression/Low_rank_tensor_regression.ipynb)
+ 
+ 4. **Fully Convolutional Neural Networks**. These are currently the "gold standard" for pixel-wise image segmentation and I assume this is what NR will be using. Note that ArcGIS Pro has an implemenation of the [U-Net algorithm](https://developers.arcgis.com/python/guide/how-unet-works/), which looks interesting. 
